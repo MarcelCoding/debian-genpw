@@ -1,5 +1,5 @@
 Package: genpw
-Version: 1.0.0-1
+Version: 1.0.0-2
 Architecture: all
 Depends: bash
 Maintainer: MarcelCoding <34819524+MarcelCoding@users.noreply.github.com>

@@ -13,15 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-    #  - name: Prepare deb
-    #    run: |
-    #      cp -r deb jitsi-openid_2.0.0-1_amd64
-    #      mkdir -p jitsi-openid_2.0.0-1_amd64/usr/local/bin
-
       - name: Copy script
         run: |
           mkdir -p deb/usr/local/bin
           cp genpw.sh deb/usr/local/bin/genpw
+          chmod +x deb/usr/local/bin/genpw
 
       - name: Build deb
         run: |
